@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #e3f0ff 0%, #f6faff 100%);
+    font-family: 'Inter', Arial, sans-serif;
+    color: #23272f;
+  }
+  .admin-main {
+    max-width: 920px;
+    margin: 2em auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(25,118,210,0.08);
+    padding: 2em 2em 2em 2em;
+  }
+  h1 {
+    color: #1976d2;
+    font-family: 'Orbitron', Arial, sans-serif;
+    font-size: 2em;
+  }
+  h2 {
+    color: #0d47a1;
+    margin-top: 2em;
+    margin-bottom: 0.7em;
+  }
+  .user-card, .order-card {
+    background: #f8fbff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(25,118,210,0.04);
+    margin-bottom: 1em;
+    padding: 1.2em 1em;
+    position: relative;
+  }
+  .user-header {
+    font-weight: 700;
+    margin-bottom: 0.2em;
+  }
+  .user-email {
+    color: #1976d2;
+    font-size: 0.98em;
+    margin-bottom: 0.6em;
+  }
+  .user-orders-count {
+    font-size: 0.95em;
+    color: #23272f;
+    margin-bottom: 0.7em;
+  }
+  .user-remove-btn {
+    background: none;
+    border: none;
+    color: #e53935;
+    font-size: 1.3em;
+    cursor: pointer;
+    float: right;
+    margin-left: 1em;
+    transition: color 0.17s;
+  }
+  .user-remove-btn:hover { color: #b71c1c; background: #f8dbdb; border-radius: 50%; }
+  
+  .order-card {
+    padding: 0.9em 1em 0.9em 1em;
+  }
+  .order-header {
+    font-weight: 600;
+    margin-bottom: 0.3em;
+    color: #23272f;
+  }
+  .order-details {
+    margin-bottom: 0.4em;
+    color: #1976d2;
+    font-size: 0.97em;
+  }
+  .order-products {
+    margin-left: 1.2em;
+    margin-bottom: 0.6em;
+  }
+  .order-product-item {
+    color: #23272f;
+    margin-bottom: 0.3em;
+    font-size: 0.96em;
+  }
+  .order-user {
+    font-size: 0.92em;
+    color: #1976d2;
+  }
+  @media (max-width: 600px) {
+    .admin-main { padding: 1em 0.3em; }
+    .user-card, .order-card { padding: 0.7em 0.4em; }
+  }

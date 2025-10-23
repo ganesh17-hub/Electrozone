@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout | ElectroZone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+  <div class="checkout-bg"></div>
+  <main class="checkout-main">
+    <form id="checkoutForm" class="checkout-form glass">
+      <h2>Checkout</h2>
+      <input name="address" placeholder="Address" required>
+      <input name="city" placeholder="City" required>
+      <input name="state" placeholder="State" required>
+      <input name="zip" placeholder="ZIP Code" required>
+      <input name="phone" placeholder="Phone Number" required>
+      <button type="submit">Place Order</button>
+      <div class="checkout-success" id="checkoutSuccess"></div>
+    </form>
+  </main>
+  <script>
+    document.getElementById('checkoutForm').onsubmit = function(e) {
+      e.preventDefault();
+      const user = JSON.parse(localStorage.getItem('loggedInUser') || '{}');
+      const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+      const form = e.target;
+      const order = {
+        email: user.email,
+        name: user.name,
+        cart: cart,
+        address: form.address.value,
+        city: form.city.value,
+        state: form.state.value,
+        zip: form.zip.value,
+        phone: form.phone.value,
+        date: Date.now()
+      };
+      let orders = JSON.parse(localStorage.getItem('orders') || '[]');
+      orders.push(order);
+      localStorage.setItem('orders', JSON.stringify(orders));
+      localStorage.setItem('cart', '[]');
+      document.getElementById('checkoutSuccess').textContent = "Order registered successfully!";
+      form.reset();
+    };
+  </script>
+</body>
+</html>

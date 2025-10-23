@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | ElectroZone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="login.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <div class="login-bg"></div>
+  <main class="login-main">
+    <section class="login-card glass">
+      <div class="login-brand">
+        <span class="brand-logo">EZ</span>
+        <span class="brand-text">ElectroZone</span>
+      </div>
+      <h1>Welcome Back</h1>
+      <form id="loginForm" autocomplete="on">
+         <div class="form-group">
+          <input id="email" name="email" type="email" required autocomplete="email" placeholder=" " />
+          <label for="email">Email address</label>
+        </div>
+        <div class="form-group password-group">
+          <input id="password" name="password" type="password" required autocomplete="current-password" placeholder=" " />
+          <label for="password">Password</label>
+          <button type="button" class="toggle-password" aria-label="Show password"><span>&#128065;</span></button>
+        </div>
+        <div class="login-error" id="loginError" aria-live="polite"></div>
+        <button type="submit" class="login-btn">Sign in</button>
+      </form>
+      <div class="login-footer">
+        <span>Don't have an account?</span>
+        <a href="register.html">Sign up</a>
+      </div>
+    </section>
+  </main>
+  <script src="login.js" defer></script>
+</body>
+</html>

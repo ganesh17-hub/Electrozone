@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register | ElectroZone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="login.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <main class="login-main" aria-label="Register">
+    <section class="login-card" role="form" aria-labelledby="registerTitle">
+      <div class="login-brand">
+        <span class="brand-logo">EZ</span>
+        <span class="brand-text">ElectroZone</span>
+      </div>
+      <h1 id="registerTitle">Create your account</h1>
+      <form id="registerForm" autocomplete="on">
+        <div class="form-group">
+          <input id="regName" name="name" type="text" required autocomplete="name" placeholder=" " />
+          <label for="regName">Full Name</label>
+        </div>
+        <div class="form-group">
+          <input id="regEmail" name="email" type="email" required autocomplete="email" placeholder=" " />
+          <label for="regEmail">Email address</label>
+        </div>
+        <div class="form-group password-group">
+          <input id="regPassword" name="password" type="password" required autocomplete="new-password" placeholder=" " />
+          <label for="regPassword">Password</label>
+          <button type="button" class="toggle-password" aria-label="Show password"><span>&#128065;</span></button>
+        </div>
+        <div class="form-group password-group">
+          <input id="regConfirm" name="confirm" type="password" required autocomplete="new-password" placeholder=" " />
+          <label for="regConfirm">Confirm Password</label>
+          <button type="button" class="toggle-password" aria-label="Show password"><span>&#128065;</span></button>
+        </div>
+        <div class="login-error" id="registerError" aria-live="polite"></div>
+        <button type="submit" class="login-btn">Register</button>
+      </form>
+      <div class="login-footer">
+        <span>Already have an account?</span>
+        <a href="index.html">Sign in</a>
+      </div>
+    </section>
+  </main>
+  <script src="register.js"></script>
+</body>
+</html>

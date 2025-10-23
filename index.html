@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ElectroZone Electronics eCommerce</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar glass">
+    <div class="nav-left">
+      <span class="logo">ElectroZone</span>
+      <div class="categories-dropdown">
+        <button id="categoriesBtn" aria-haspopup="true" aria-expanded="false">Categories</button>
+        <ul id="categoriesMenu" class="dropdown-menu" aria-label="Categories">
+          <li>Mobiles</li>
+          <li>Laptops</li>
+          <li>Audio Devices</li>
+          <li>Cameras</li>
+          <li>Smart Devices</li>
+          <li>Accessories</li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav-center">
+      <input type="search" id="searchBar" placeholder="Search gadgets, brands, categories…" aria-label="Search"/>
+    </div>
+    <div class="nav-right">
+      <button id="cartBtn" aria-label="Open cart" class="cart-icon">
+        <span class="cart-badge" id="cartCount">0</span> 🛒
+      </button>
+      <div id="profileMenu" class="profile-menu">
+        <button id="profileBtn" aria-label="User Profile" class="profile-icon">
+          <span id="profileName">Profile</span>
+          <span style="font-size:1.3em;">&#128100;</span>
+        </button>
+        <div id="profileDropdown" class="profile-dropdown"></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Parallax Hero & Carousel -->
+  <section class="hero-parallax">
+    <div id="dealCarousel" class="carousel"></div>
+    <div class="parallax-bg"></div>
+  </section>
+
+  <!-- Category Cards -->
+  <section class="categories-section">
+    <div class="categories-grid" id="categoriesGrid"></div>
+  </section>
+
+  <!-- Main Products Grid -->
+  <main>
+    <section class="products-section">
+      <h2>Top Electronic Gadgets</h2>
+      <div class="products-grid" id="productsGrid"></div>
+    </section>
+  </main>
+
+  <!-- Product Modal -->
+  <div id="productModal" class="modal" role="dialog" aria-modal="true" tabindex="-1">
+    <div class="modal-content" id="modalContent"></div>
+    <button class="modal-close" id="closeModal" aria-label="Close product details">&times;</button>
+  </div>
+
+  <!-- Cart Drawer -->
+  <aside id="cartDrawer" class="cart-drawer" aria-label="Shopping cart">
+    <header>
+      <h3>Your Cart</h3>
+      <button id="closeCart" aria-label="Close cart">&times;</button>
+    </header>
+    <div id="cartItems"></div>
+    <footer>
+      <div class="cart-total">Total: ₹<span id="cartTotal">0</span></div>
+      <a href="checkout.html"><button id="checkoutBtn" class="checkout-btn">Checkout</button></a>
+    </footer>
+  </aside>
+
+  <!-- Order Zone Section -->
+  <section class="orders-section">
+    <h2>Your Orders</h2>
+    <div id="ordersZone"></div>
+  </section>
+
+  <!-- Overlay for modal and drawer -->
+  <div id="overlay" class="overlay"></div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

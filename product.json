@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "OnePlus Nord 4",
+    "price": 27999,
+    "category": "Mobiles",
+    "img": "oneplus-nord-4.png",
+    "desc": "Flagship killer with AMOLED display, 5G, and 120Hz refresh rate."
+  },
+  {
+    "id": 2,
+    "name": "Realme Buds Air 5",
+    "price": 3999,
+    "category": "Audio Devices",
+    "img": "Realme buds air.jpg",
+    "desc": "True wireless earbuds with ANC and deep bass."
+  },
+  {
+    "id": 3,
+    "name": "HP Pavilion i5 Laptop",
+    "price": 64999,
+    "category": "Laptops",
+    "img": "HP pavilion.png",
+    "desc": "11th Gen Intel, 16GB RAM, 512GB SSD, FHD display."
+  },
+  {
+    "id": 4,
+    "name": "Apple Watch Series 9",
+    "price": 39999,
+    "category": "Smartwatches",
+    "img": "Apple-Watch-Series-9.png",
+    "desc": "Advanced health tracking with always-on display."
+  },
+  {
+    "id": 5,
+    "name": "Canon EOS 90D Camera",
+    "price": 89999,
+    "category": "Cameras",
+    "img": "Cannon Camera.jpg",
+    "desc": "32.5MP APS-C DSLR, 4K video, fast autofocus."
+  },
+  {
+    "id": 6,
+    "name": "Samsung Galaxy Tab S9",
+    "price": 74999,
+    "category": "Smart Devices",
+    "img": "Galaxy tab.jpg",
+    "desc": "12.4” AMOLED, Snapdragon 8 Gen 2, S Pen included."
+  },
+  {
+    "id": 7,
+    "name": "JBL Charge 5 Speaker",
+    "price": 12499,
+    "category": "Audio Devices",
+    "img": "JBL speaker-5.png",
+    "desc": "Waterproof portable Bluetooth speaker, 20h playtime."
+  },
+  {
+    "id": 8,
+    "name": "PlayStation 5",
+    "price": 55999,
+    "category": "Smart Devices",
+    "img": "play station.jpg",
+    "desc": "Next-gen console, ultra-fast SSD, ray tracing."
+  },
+  {
+    "id": 9,
+    "name": "Xiaomi Power Bank 20000mAh",
+    "price": 2499,
+    "category": "Accessories",
+    "img": "Power-bank.png",
+    "desc": "Ultra high-capacity, fast charging, dual USB output."
+  },
+  {
+    "id": 10,
+    "name": "Logitech MX Master 3 Mouse",
+    "price": 9499,
+    "category": "Accessories",
+    "img": "mx-master-3-mouse.png",
+    "desc": "Ergonomic, wireless, advanced productivity mouse."
+  },
+ {
+    "id": 11,
+    "name": "Dyson on Track Headphones",
+    "price":  20000,
+    "category": "Audio Devices",
+    "img": "Headset.jpg",
+    "desc": "Ergonomic, wireless, advanced productivity Headset."
+  },
+   {
+    "id": 12,
+    "name": " iPhone 17 Pro Max",
+    "price": 155000,
+    "category": "Mobiles",
+    "img": "iPhone-17.png",
+    "desc": "Heat-Forged Aluminum Unibody, Pro Camera System, Runs iOS 26."
+  }
+]
